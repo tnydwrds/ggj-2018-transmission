@@ -113,6 +113,34 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &316325964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 316325965}
+  m_Layer: 0
+  m_Name: shoot_location
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &316325965
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 316325964}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.25, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1006112994}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &375381572
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +274,7 @@ GameObject:
   - component: {fileID: 1006112994}
   - component: {fileID: 1006112993}
   - component: {fileID: 1006112992}
+  - component: {fileID: 1006112995}
   m_Layer: 0
   m_Name: player_sprite
   m_TagString: Untagged
@@ -317,10 +346,25 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 316325965}
   m_Father: {fileID: 375381574}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1006112995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1006112991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63377844a6764b2a82e8ee2ad3507c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawnLocation: {fileID: 316325965}
+  projectile: {fileID: 1289744851640558, guid: 552d0f105f6584f69beb7d3f9fbe95b8, type: 2}
+  fireRate: 1
 --- !u!1 &1368938740
 GameObject:
   m_ObjectHideFlags: 0
