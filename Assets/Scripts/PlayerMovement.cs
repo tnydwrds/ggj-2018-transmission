@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour {
 
     [SerializeField]
-    private float movementSpeed = 3f;
+    private float speed = 3f;
 
     void Update() {
         // Movement
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
             movement = Vector3.right;
         }
 
-        transform.Translate(movement * movementSpeed * Time.deltaTime);
+        transform.Translate(movement * speed * Time.deltaTime);
     }
 
 }
