@@ -11,6 +11,10 @@ public class ProjectileBank : MonoBehaviour {
     [Range(0, 6)]
     private uint barrierCount = 1;
 
+    [SerializeField]
+    [Range(45, 360)]
+    private float barrierSpreadAngle = 360f;
+
     private SpriteRenderer overlay;
     private float colorDecrementorAmount = 0.2f;
     private GameObject[] barriers;
@@ -18,7 +22,7 @@ public class ProjectileBank : MonoBehaviour {
     void Start() {
         overlay = GetComponentInChildren<SpriteRenderer>();
         for (var i = 0; i < barrierCount; i++) {
-            Quaternion rotation = Quaternion.Euler(0, 0, (360 / barrierCount) * i);
+            Quaternion rotation = Quaternion.Euler(0, 0, (barrierSpreadAngle / barrierCount) * i);
             GameObject barrier = Instantiate(barrierPrefab, transform.position, rotation);
             barrier.transform.parent = transform;
         }
