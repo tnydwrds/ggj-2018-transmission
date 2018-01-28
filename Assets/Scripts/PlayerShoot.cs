@@ -29,7 +29,7 @@ public class PlayerShoot : MonoBehaviour {
         }
     }
 
-    void OnTiggerExit2D(Collider2D other) {
+    void OnTriggerExit2D(Collider2D other) {
         if (other.tag == "ProjectileDepot") {
             projectile = null;
         }
