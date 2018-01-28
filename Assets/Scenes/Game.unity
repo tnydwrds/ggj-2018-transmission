@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &468750733 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1269891814828182, guid: afa79be0c68294ed69f2acdab08001ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 1030672601}
 --- !u!1001 &906249462
 Prefab:
   m_ObjectHideFlags: 0
@@ -150,7 +155,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4804230374535514, guid: afa79be0c68294ed69f2acdab08001ed, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1269891814828182, guid: afa79be0c68294ed69f2acdab08001ed, type: 2}
       propertyPath: m_Name
@@ -196,7 +201,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4804230374535514, guid: afa79be0c68294ed69f2acdab08001ed, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1269891814828182, guid: afa79be0c68294ed69f2acdab08001ed, type: 2}
       propertyPath: m_Name
@@ -205,6 +210,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afa79be0c68294ed69f2acdab08001ed, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1375614686 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1269891814828182, guid: afa79be0c68294ed69f2acdab08001ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 1543130007}
 --- !u!1 &1397095611
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,8 +333,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4549248073393530, guid: 2ea6a029aca2e4fcf9c5ba79de060946, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114901896598949082, guid: 2ea6a029aca2e4fcf9c5ba79de060946,
+        type: 2}
+      propertyPath: currentOrb
+      value: 
+      objectReference: {fileID: 1375614686}
+    - target: {fileID: 114901896598949082, guid: 2ea6a029aca2e4fcf9c5ba79de060946,
+        type: 2}
+      propertyPath: orbOffsetDistance.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 114901896598949082, guid: 2ea6a029aca2e4fcf9c5ba79de060946,
+        type: 2}
+      propertyPath: nextOrb
+      value: 
+      objectReference: {fileID: 468750733}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ea6a029aca2e4fcf9c5ba79de060946, type: 2}
   m_IsPrefabParent: 0
@@ -365,7 +390,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4804230374535514, guid: afa79be0c68294ed69f2acdab08001ed, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afa79be0c68294ed69f2acdab08001ed, type: 2}
