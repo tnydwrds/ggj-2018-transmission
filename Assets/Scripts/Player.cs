@@ -13,6 +13,9 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private GameObject nextOrb;
 
+    [SerializeField]
+    private GameObject nextNextOrb;
+
     private float orbOffsetDistance = 0.75f;
     private Vector2 velocity = Vector2.zero;
 
@@ -27,6 +30,16 @@ public class Player : MonoBehaviour {
 
         if (velocity != Vector2.zero) {
             transform.Translate(velocity * Time.deltaTime);
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other) {
+        float distance = Vector2.Distance(transform.position, other.gameObject.transform.position);
+        if (distance <= 0.3) {
+            velocity = Vector2.zero;
+            currentOrb = nextOrb;
+            nextOrb = nextNextOrb;
+            SetLaunchPosition();
         }
     }
 
