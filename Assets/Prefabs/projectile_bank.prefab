@@ -35,9 +35,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4226470943903258}
-  - component: {fileID: 61044064670419460}
-  - component: {fileID: 114442713425129100}
   - component: {fileID: 50197007032685192}
+  - component: {fileID: 58245970843630992}
+  - component: {fileID: 114442713425129100}
   m_Layer: 0
   m_Name: projectile_bank
   m_TagString: Untagged
@@ -122,8 +122,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61044064670419460
-BoxCollider2D:
+--- !u!58 &58245970843630992
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -135,18 +135,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.5
 --- !u!114 &114442713425129100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -158,6 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcdd7e74c67684243808a3ee61ac32a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barrierPrefab: {fileID: 1375514452907690, guid: 292a13002dfd9432e990b5e42929de27,
+    type: 2}
+  barrierCount: 1
 --- !u!212 &212232453796083572
 SpriteRenderer:
   m_ObjectHideFlags: 1

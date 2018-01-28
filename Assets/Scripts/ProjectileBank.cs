@@ -4,11 +4,24 @@ using UnityEngine;
 
 public class ProjectileBank : MonoBehaviour {
 
+    [SerializeField]
+    private GameObject barrierPrefab;
+
+    [SerializeField]
+    [Range(0, 6)]
+    private uint barrierCount = 1;
+
     private SpriteRenderer overlay;
     private float colorDecrementorAmount = 0.2f;
+    private GameObject[] barriers;
 
     void Start() {
         overlay = GetComponentInChildren<SpriteRenderer>();
+        for (var i = 0; i < barrierCount; i++) {
+            Quaternion rotation = Quaternion.Euler(0, 0, (360 / barrierCount) * i);
+            GameObject barrier = Instantiate(barrierPrefab, transform.position, rotation);
+            barrier.transform.parent = transform;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other) {
