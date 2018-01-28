@@ -342,11 +342,6 @@ Prefab:
       objectReference: {fileID: 1375614686}
     - target: {fileID: 114901896598949082, guid: 2ea6a029aca2e4fcf9c5ba79de060946,
         type: 2}
-      propertyPath: orbOffsetDistance.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901896598949082, guid: 2ea6a029aca2e4fcf9c5ba79de060946,
-        type: 2}
       propertyPath: nextOrb
       value: 
       objectReference: {fileID: 468750733}

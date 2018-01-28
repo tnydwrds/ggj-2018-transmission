@@ -38,7 +38,7 @@ public class Player : MonoBehaviour {
         float zAngle = Mathf.Atan2(positionDelta.y, positionDelta.x) * 180 / Mathf.PI;
         transform.rotation = Quaternion.Euler(0, 0, zAngle - 90);
 
-        transform.Translate(orbOffsetDistance * Vector3.up);
+        transform.Translate(orbOffsetDistance * Vector2.up);
     }
 
 }
