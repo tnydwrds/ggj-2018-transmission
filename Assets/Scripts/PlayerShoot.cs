@@ -14,7 +14,7 @@ public class PlayerShoot : MonoBehaviour {
     private float nextFireTime = 0f;
 
     void Update() {
-        if (Input.GetKey(KeyCode.Space) && Time.time > nextFireTime && projectile) {
+        if (Input.GetMouseButton(0) && Time.time > nextFireTime && projectile) {
             nextFireTime = Time.time + fireRate;
             Instantiate(projectile, transform.position, transform.rotation);
         }
